@@ -1,0 +1,37 @@
+server {
+	listen 80;
+	listen [::]:80;
+	return 301 https://$host$request_uri;
+}
+
+server {
+
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	ssl_certificate /etc/ssl/certs/certificate.crt;
+	ssl_certificate_key /etc/ssl/certs/public.key;
+
+	root    /var/www;
+		error_page 497 https://$host:$server_port$request_uri;
+		index start_page.html;
+
+	location / 
+	{
+		try_files $uri $uri/ =404;
+	}
+
+    location /wordpress 
+	{
+        return 307 http://$host:5050;
+    }
+	location /phpmyadmin/ 
+	{
+    	rewrite ^/phpmyadmin(/.*)$ $1 break;
+    	proxy_pass http://$host:5000;
+	}
+	location /index.php 
+	{
+    	return 301 http://$host/phpmyadmin/;
+	}
+}
