@@ -14,3 +14,6 @@
 ```
 ./setup.sh
 ```
+
+### Статьи и источники:
+[About kubernetes](https://www.youtube.com/watch?v=X48VuDVv0do&ab_channel=TechWorldwithNana)
