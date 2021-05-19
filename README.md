@@ -23,3 +23,5 @@
 [wp-config](https://www.hostinger.ru/rukovodstva/wp-config-php/)
 
 [minikube](https://minikube.sigs.k8s.io/docs/handbook/)
+
+[telegraf documentation](https://docs.influxdata.com/telegraf/v1.18/)
