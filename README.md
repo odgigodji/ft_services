@@ -4,8 +4,8 @@
 
 ![project_img](https://i.ibb.co/q0N7dC4/project-img.jpg)
 
-This project introduces us to the concept of clustering and teaches how to use ```Kubernetes``` and ```Docker``` technologies together.
-We will use ```Kubernetes``` for implementing an infrastructure with different services, therefore, we will install a cluster that groups several service containers. Each service works in a dedicated container, and the containers have the same name as the associated service. For performance reasons the containers are built on ```Alpine Linux```.
+Этот проект знакомит нас с концепцией кластеризации и учит, как использовать технологии Kubernetes и Docker вместе.
+Мы будем использовать Kubernetes для реализации инфраструктуры с разными сервисами, поэтому мы установим кластер, который группирует несколько сервисных контейнеров. Каждая служба работает в выделенном контейнере, и контейнеры имеют то же имя, что и связанная служба. По соображениям производительности контейнеры построены на `` Alpine Linux ``.
 
 ### How to use it
 
