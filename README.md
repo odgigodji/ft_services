@@ -1,6 +1,6 @@
 # ft_services
 
-## Знакомство в Kubernetes
+## Знакомство c Kubernetes
 
 ![project_img](https://i.ibb.co/q0N7dC4/project-img.jpg)
 
